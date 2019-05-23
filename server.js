@@ -42,6 +42,13 @@ app.get('/about', (req, res) => {
     });
 })
 
+app.get('/projects', (req, res) => {
+    res.render('projects.hbs', {
+        pageTitle: 'Projects Page',
+        welcomeMessage: 'Welcome to fortfolio'
+    })
+})
+
 app.get('/bad', (req, res) => {
     res.send({
         statusCode: 505,
